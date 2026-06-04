@@ -9,24 +9,47 @@ import {
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = (e) => {
+  e.preventDefault();
 
-    setIsSubmitting(true);
+  setIsSubmitting(true);
 
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
-      setIsSubmitting(false);
-    }, 1500);
-  };
+  emailjs
+    .sendForm(
+      "service_3iut3ic",
+      "template_rf55v9a",
+      e.target,
+      "7Av-FMd8P23gAK9RA"
+    )
+    .then(
+      () => {
+        toast({
+          title: "Message sent!",
+          description:
+            "Thank you for your message. I'll get back to you soon.",
+        });
+
+        e.target.reset();
+        setIsSubmitting(false);
+      },
+      (error) => {
+        console.error(error);
+
+        toast({
+          title: "Error",
+          description: "Failed to send message. Please try again.",
+        });
+
+        setIsSubmitting(false);
+      }
+    );
+};
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -116,7 +139,7 @@ export const ContactSection = () => {
           >
             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
@@ -128,7 +151,7 @@ export const ContactSection = () => {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="from_name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
                   placeholder="Harini Sri..."
@@ -146,7 +169,7 @@ export const ContactSection = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="from_email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
                   placeholder="kbharinisri2020@gmail.com"
