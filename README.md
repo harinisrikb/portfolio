@@ -78,14 +78,7 @@ http://localhost:5173
 
 ## Screenshot
 
-Add your homepage screenshot here:
 <img width="1895" height="895" alt="image" src="https://github.com/user-attachments/assets/5ba60bcb-b749-433a-8d90-f881b95da262" />
-
-```md
-![Portfolio Homepage](./portfolio-homepage.png)
-```
-
----
 
 ## Live Demo
 
