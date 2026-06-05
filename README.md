@@ -3,12 +3,6 @@
 <div align="center">
   <br />
   <br />
-  <div>
-    <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-    <img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS" />
-    <img src="https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-    <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  </div>
   <h3 align="center">Personal Portfolio Website</h3>
   <div align="center">
     Showcasing my skills, projects, certifications, and experience in Artificial Intelligence, Machine Learning, and Software Development.
