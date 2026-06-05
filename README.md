@@ -2,9 +2,6 @@
 
 <div align="center">
   <br />
-  <a href="https://portfolio-harinisrikbs-projects.vercel.app" target="_blank">
-    <img src="./banner.png" alt="Harini Sri K B Portfolio">
-  </a>
   <br />
   <div>
     <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
