@@ -1,6 +1,4 @@
 # Harini Sri K B Portfolio
-
-<div align="center">
   <br />
   <br />
   <h3 align="center">Personal Portfolio Website</h3>
