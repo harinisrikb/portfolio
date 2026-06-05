@@ -78,7 +78,7 @@ http://localhost:5173
 
 ## Screenshot
 
-<img width="1895" height="895" alt="image" src="https://github.com/user-attachments/assets/5ba60bcb-b749-433a-8d90-f881b95da262" />
+<img width="1895" height="895" alt="Portfolio Homepage" src="https://github.com/user-attachments/assets/5ba60bcb-b749-433a-8d90-f881b95da262" />
 
 ## Live Demo
 
